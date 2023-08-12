@@ -104,4 +104,19 @@ function handleEditBtnClick(id) {
 
   document.querySelector("#updateSv").disabled = false;
 }
+
+function show() {
+  document.querySelector(".fa-eye-slash").classList.remove("d-none");
+  document.querySelector(".fa-eye").classList.add("d-none");
+
+  document.querySelector("#txtPass").type = "text";
+}
+
+function hide() {
+  document.querySelector(".fa-eye-slash").classList.add("d-none");
+  document.querySelector(".fa-eye").classList.remove("d-none");
+
+  document.querySelector("#txtPass").type = "password";
+}
+
 getAllSV();

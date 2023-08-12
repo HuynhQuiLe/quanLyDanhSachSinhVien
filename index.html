@@ -6,6 +6,13 @@
     <title>Document</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
@@ -36,7 +43,7 @@
                 <input type="text" class="form-control" id="txtEmail" />
                 <span id="spanEmailSV" class="text-danger"></span>
               </div>
-              <div class="col-6 form-group">
+              <div class="col-6 form-group position-relative">
                 <label for="">Mật khẩu: </label>
                 <input
                   type="password"
@@ -44,6 +51,13 @@
                   id="txtPass"
                   autocomplete="off"
                 />
+                <div
+                  class="position-absolute"
+                  style="bottom: 12px; right: 30px; z-index: 100"
+                >
+                  <i class="fa fa-eye" onclick="show()"></i>
+                  <i class="fa fa-eye-slash d-none" onclick="hide()"></i>
+                </div>
                 <span id="spanMatKhau" class="text-danger"></span>
               </div>
             </div>
